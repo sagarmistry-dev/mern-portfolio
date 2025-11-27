@@ -1,4 +1,5 @@
 import { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import { loginUserApi } from "../api/authApi";
 import { AuthContext } from "../context/AuthContext";
 import { toast } from "react-toastify";
@@ -8,6 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false); // 👁️ Toggle state
   const { login } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,7 +20,7 @@ const Login = () => {
       if (status === 200) {
         login(data.token);
         toast.success("Login successful!");
-        window.location.href = "/admin";
+        navigate("/admin");
       } else {
         toast.error(data.error || "Invalid credentials");
       }
