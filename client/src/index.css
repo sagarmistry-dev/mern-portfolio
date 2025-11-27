@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  background-color: #f9fafb; /* light background */
+  color: #111827;
+  transition: background-color 0.3s ease;
+}
+
+.dark html, .dark body, .dark #root {
+  background-color: #111827; /* dark background */
+  color: #f9fafb;
+}
+html {
+  scroll-behavior: smooth;
+}
