@@ -1,6 +1,6 @@
 const ProjectTable = ({ projects, onEdit, onDelete }) => {
   return (
-    <div className="overflow-x-auto bg-gray-500 dark:bg-neutral-800 rounded-xl shadow-md">
+    <div className="overflow-x-auto bg-gray-100 dark:bg-neutral-800 rounded-xl shadow-md">
       <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
         <thead className="bg-neutral-800 dark:bg-neutral-900 dark:text-gray-200">
           <tr>
