@@ -11,7 +11,7 @@ const ProjectTable = ({ projects, onEdit, onDelete }) => {
         </thead>
         <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
           {projects.map((project) => (
-            <tr key={project._id} className="hover:bg-gray-700 dark:hover:bg-neutral-900 transition">
+            <tr key={project._id} className="hover:bg-gray-200 dark:hover:bg-neutral-900 transition">
               <td className="px-6 py-4 text-gray-800 dark:text-gray-100 font-medium">
                 {project.title}
               </td>
