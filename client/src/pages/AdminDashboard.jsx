@@ -102,7 +102,7 @@ const AdminDashboard = () => {
     <div className="min-h-screen bg-black text-white py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 dark:text-white">
+          <h1 className="text-3xl font-bold text-white dark:text-white">
             Admin Dashboard
           </h1>
           <button
