@@ -32,7 +32,7 @@ const Login = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-black text-white px-6">
       <div className="w-full max-w-md bg-neutral-800 dark:bg-neutral-800 rounded-xl shadow-lg p-8 animate-fadeIn">
-        <h2 className="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-white">
+        <h2 className="text-2xl font-bold text-center mb-6 text-white dark:text-white">
           Admin Login
         </h2>
 
@@ -40,7 +40,7 @@ const Login = () => {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+              className="block text-sm font-medium text-white dark:text-gray-300 mb-1"
             >
               Email
             </label>
@@ -57,7 +57,7 @@ const Login = () => {
           <div>
             <label
               htmlFor="password"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+              className="block text-sm font-medium text-white dark:text-gray-300 mb-1"
             >
               Password
             </label>
