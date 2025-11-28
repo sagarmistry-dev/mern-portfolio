@@ -30,7 +30,7 @@ const ProjectForm = ({ onSave, initialData }) => {
       onSubmit={handleSubmit}
       className="bg-white dark:bg-neutral-800 p-6 rounded-xl shadow-md space-y-4"
     >
-      <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
+      <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-800 mb-4">
         {initialData ? "Edit Project" : "Add Project"}
       </h2>
 
