@@ -30,8 +30,8 @@ const Login = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-50 dark:bg-black px-6">
-      <div className="w-full max-w-md bg-white dark:bg-neutral-800 rounded-xl shadow-lg p-8 animate-fadeIn">
+    <div className="flex min-h-screen items-center justify-center bg-black text-white px-6">
+      <div className="w-full max-w-md bg-neutral-800 dark:bg-neutral-800 rounded-xl shadow-lg p-8 animate-fadeIn">
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-white">
           Admin Login
         </h2>
