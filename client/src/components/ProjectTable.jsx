@@ -2,7 +2,7 @@ const ProjectTable = ({ projects, onEdit, onDelete }) => {
   return (
     <div className="overflow-x-auto bg-white dark:bg-neutral-800 rounded-xl shadow-md">
       <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-        <thead className="dark:bg-neutral-900 dark:text-gray-200">
+        <thead className="bg-neutral-900 dark:bg-neutral-900 dark:text-gray-200">
           <tr>
             <th className="px-6 py-3 text-left text-sm font-semibold">Title</th>
             <th className="px-6 py-3 text-left text-sm font-semibold">Tech Stack</th>
