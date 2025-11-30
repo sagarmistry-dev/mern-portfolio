@@ -28,14 +28,15 @@ const ProjectForm = ({ onSave, initialData }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-neutral-100 dark:bg-neutral-900 p-6 rounded-xl shadow-md space-y-4 transition-colors duration-300"
+      className="bg-white dark:bg-neutral-900 p-6 rounded-xl shadow-xl space-y-5 transition-colors duration-300"
     >
-      <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
+      <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
         {initialData ? "Edit Project" : "Add Project"}
       </h2>
 
+      {/* Title */}
       <div>
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
+        <label className="block text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">
           Title
         </label>
         <input
@@ -43,13 +44,14 @@ const ProjectForm = ({ onSave, initialData }) => {
           name="title"
           value={formData.title}
           onChange={handleChange}
-          className="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none transition"
+          className="w-full rounded-md border border-gray-400 dark:border-gray-700 bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-white px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
           required
         />
       </div>
 
+      {/* Description */}
       <div>
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
+        <label className="block text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">
           Description
         </label>
         <textarea
@@ -57,13 +59,14 @@ const ProjectForm = ({ onSave, initialData }) => {
           value={formData.description}
           onChange={handleChange}
           rows="3"
-          className="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none transition"
+          className="w-full rounded-md border border-gray-400 dark:border-gray-700 bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-white px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
         ></textarea>
       </div>
 
+      {/* Image + GitHub */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
+          <label className="block text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">
             Image URL
           </label>
           <input
@@ -71,13 +74,13 @@ const ProjectForm = ({ onSave, initialData }) => {
             name="image"
             value={formData.image}
             onChange={handleChange}
-            className="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none transition"
+            className="w-full rounded-md border border-gray-400 dark:border-gray-700 bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-white px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
             required
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
+          <label className="block text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">
             GitHub Link
           </label>
           <input
@@ -85,14 +88,15 @@ const ProjectForm = ({ onSave, initialData }) => {
             name="github"
             value={formData.github}
             onChange={handleChange}
-            className="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none transition"
+            className="w-full rounded-md border border-gray-400 dark:border-gray-700 bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-white px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
             required
           />
         </div>
       </div>
 
+      {/* Tech Stack */}
       <div>
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
+        <label className="block text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">
           Tech Stack (comma separated)
         </label>
         <input
@@ -100,11 +104,12 @@ const ProjectForm = ({ onSave, initialData }) => {
           name="techStack"
           value={formData.techStack.join(",")}
           onChange={handleChange}
-          className="w-full rounded-md border border-gray-300 dark:border-gray-700 bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-100 px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none transition"
+          className="w-full rounded-md border border-gray-400 dark:border-gray-700 bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-white px-3 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
         />
       </div>
 
-      <div className="flex justify-end mt-4">
+      {/* Save Button */}
+      <div className="flex justify-end">
         <button
           type="submit"
           className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2 rounded-md transition"
