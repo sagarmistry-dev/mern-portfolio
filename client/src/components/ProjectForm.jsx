@@ -30,12 +30,12 @@ const ProjectForm = ({ onSave, initialData }) => {
       onSubmit={handleSubmit}
       className="bg-neutral-800 dark:bg-neutral-800 p-6 rounded-xl shadow-md space-y-4"
     >
-      <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-800 mb-4">
+      <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
         {initialData ? "Edit Project" : "Add Project"}
       </h2>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-800 mb-1">
+        <label className="block text-sm font-medium text-gray-200 dark:text-gray-800 mb-1">
           Title
         </label>
         <input
@@ -49,7 +49,7 @@ const ProjectForm = ({ onSave, initialData }) => {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-800 mb-1">
+        <label className="block text-sm font-medium text-gray-200 dark:text-gray-800 mb-1">
           Description
         </label>
         <textarea
@@ -63,7 +63,7 @@ const ProjectForm = ({ onSave, initialData }) => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-800 mb-1">
+          <label className="block text-sm font-medium text-gray-200 dark:text-gray-800 mb-1">
             Image URL
           </label>
           <input
@@ -76,7 +76,7 @@ const ProjectForm = ({ onSave, initialData }) => {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-800 mb-1">
+          <label className="block text-sm font-medium text-gray-200 dark:text-gray-800 mb-1">
             GitHub Link
           </label>
           <input
@@ -91,7 +91,7 @@ const ProjectForm = ({ onSave, initialData }) => {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-800 mb-1">
+        <label className="block text-sm font-medium text-gray-200 dark:text-gray-800 mb-1">
           Tech Stack (comma separated)
         </label>
         <input
