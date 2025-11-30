@@ -35,7 +35,7 @@ const ProjectForm = ({ onSave, initialData }) => {
       </h2>
 
       <div>
-        <label className="block text-sm font-medium text-gray-200 dark:text-gray-800 mb-1">
+        <label className="block text-sm font-medium text-gray-200 dark:text-gray-200 mb-1">
           Title
         </label>
         <input
